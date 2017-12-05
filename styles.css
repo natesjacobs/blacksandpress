@@ -9,22 +9,26 @@ body {
   padding: 0;
   font-family: sans-serif;
   overflow: hidden;
-  height: 100%;
-
 }
 
 .App {
-  display: grid;
-  /*grid-template-areas:
-    "body";*/
+  overflow: hidden;
+  height: 100%;
 }
 
 .Stars {
-  position: absolute;
-  overflow: hidden;
+  position: fixed;
   height: 100%;
   z-index: -1;
   /*animation: imspin infinite 2000s linear;*/
+}
+
+.Sand {
+  position: fixed;
+  width: 102%;
+  left: -1%;
+  bottom: -3%;
+  z-index: 0;
 }
 
 .Contents {
@@ -38,15 +42,6 @@ body {
   text-align: center;
   line-height: 50%;
   z-index: 1;
-}
-
-.Sand {
-  position: absolute;
-  bottom: 0px;
-  width: 102%;
-  left: -1%;
-  bottom: -3%;
-  z-index: 0;
 }
 
 /* text */
