@@ -1,4 +1,4 @@
-html{
+html {
     /*height:100%;*/
     /*background: linear-gradient(0deg, #224684, #010b1c) no-repeat;*/
     background: black;
@@ -45,15 +45,14 @@ body {
 }
 
 /* text */
-a:link, a:visited {
+a, a:link, a:visited {
   color: inherit;
   text-decoration: none;
+  font-weight: normal;
 }
+
 a:hover {
-  font-weight: bold;
-}
-p:hover {
-    cursor:default;
+  text-decoration: underline;
 }
 
 .mark {
@@ -62,27 +61,22 @@ p:hover {
 }
 
 .booktitle {
-  font-size: 0.8em;
-  line-height: 125%;
-
+  font-weight: lighter;
+  line-height: 100%;
 }
-.booktitle:hover{
+
+.booklinks {
   font-weight: normal;
+  font-size: 0.9em;
 }
 
-/*desktop*/
-@media screen and (min-aspect-ratio: 1/1)  {
-
+.booktitle:hover{
+  cursor: default;
 }
+
 /*mobile*/
 @media screen and (max-aspect-ratio: 1/1)  {
   .Contents {
     font-size: 3em;
   }
-}
-
-/*animations*/
-@keyframes imspin {
-  from { transform: rotate(360deg); }
-  to { transform: rotate(0deg); }
 }
